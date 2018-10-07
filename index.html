@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="js/game.js" defer></script>
+    <script src="js/card.js" defer></script>
+    <script src="js/cardsArray.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="menu">
+                <div>
+                    <button id="skirt-button">Card's skirt</button>
+                    <div id="skirt" class="submenu skirts">
+                        <div class="submenu-item skirt-1"></div>
+                        <div class="submenu-item skirt-2"></div>
+                        <div class="submenu-item skirt-3"></div>
+                    </div>
+                </div>
+                <div>
+                    <button id="difficulty-button">Difficulty</button>
+                    <div id="difficulty" class="diffs submenu">
+                        <div class="submenu-item low">4 pairs</div>
+                        <div class="submenu-item medium">8 pairs</div>
+                        <div class="submenu-item high">16 pairs</div>
+                    </div>
+                </div>
+                <div id="timer" class="timer-field"></div>
+                <div id="score" class="score-field"></div>
+                <div class="new-game-btn">
+                    <button id="new-game-button">New Game</button>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div id="game-field"></div>
+            <section id="intro" class="rules">
+                <h3>How to play:</h3>
+                <ol>
+                    <li><p>Select the skirt and game difficulty</p></li>
+                    <li><p>Enter the first name, last name and email</p></li>
+                    <li><p>Press "Start"</p></li>
+                    <li><p>Turn over the cards and look for the same ones</p></li>
+                    <li><p>Have Fun!</p></li>
+                </ol>
+                <form action="">
+                    <label for="fName">First name<input type="text" id="fName" required></label>
+                    <label for="lName">Last name<input type="text" id="lName" required></label>
+                    <label for="email">Email<input type="email" id="email"></label>  
+                </form>
+                <section class="preview">
+                    <section class="sel-item">
+                        <h4>Skirt:</h4>
+                        <div id="skirt-preview"></div>
+                    </section>
+                    <section class="sel-item">
+                        <h4>Difficulty:</h4>
+                        <div> <p id="diff-preview"></p></div>
+                    </section>
+                </section>
+                <button id="start" class="start-button" disabled>Start</button>
+            </section>
+            <div id="result" class="result">
+                <h1>Congratulations!</h1>
+                <ol id="top10">
+                    <li class="score-item"></li>
+                    <li class="score-item"></li>
+                    <li class="score-item"></li>
+                    <li class="score-item"></li>
+                    <li class="score-item"></li>
+                    <li class="score-item"></li>
+                    <li class="score-item"></li>
+                    <li class="score-item"></li>
+                    <li class="score-item"></li>
+                    <li class="score-item"></li>
+                </ol>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
